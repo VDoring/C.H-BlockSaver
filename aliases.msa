@@ -1,0 +1,41 @@
+﻿/blocksaver [$one] [$two] =>>>
+
+	if($one == '') {
+		msg('/blocksaver help 입력')
+	}
+	
+	
+	else {
+	
+	if($one == 'help') {
+		msg('/blocksaver run save : 블럭보호 on')
+		msg('/blocksaver run del : 블럭보호 off')
+	}
+	
+	
+	else {
+	
+	if($one == 'run') {
+	if($two == '') {
+		msg('/blocksaver run (save/del) 입력.')
+	}
+	
+	
+	else {
+	
+	if($two == 'save') {
+		store_value((blocksave), true)
+		msg('블럭보호 ON!')
+	}
+	
+	
+	else {
+	
+	if($two == 'del') {
+		clear_value((blocksave))
+		msg('블럭보호 OFF!')
+	}
+	
+}}}}}
+
+<<<
